@@ -30,14 +30,13 @@ Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 
 | # | Aula | Projeto | Repositório | Deploy | Tecnologia |
 |---|------|---------|--------------|--------|------------|
-| 01 | Aula 01 | vannila.js | [🔗 Repositório](https://github.com/Arthur-2612/vannila.js) | [🌐 Ver online](https://vannila-js.vercel.app) | CSS / JavaScript |
-| 02 | Aula 02 | projeto-react | [🔗 Repositório](https://github.com/Arthur-2612/projeto-react) | [🌐 Ver online](https://projeto-react-red-six.vercel.app) | React |
-| 03 | Aula 03 | quiz_react | [🔗 Repositório](https://github.com/Arthur-2612/quiz_react) | [🌐 Ver online](https://quiz-react-jet-nine.vercel.app) | React |
-| 04 | Aula 03 | vue-project | [🔗 Repositório](https://github.com/Arthur-2612/vue-project) | [🌐 Ver online](https://vue-project-blwnxgo6x-arthur-033b.vercel.app) | Vue |
-| 05 | Aula 03 | meu-app-angular | [🔗 Repositório](https://github.com/Arthur-2612/meu-app-angular) | [🌐 Ver online](https://meu-app-angular.vercel.app) | Angular |
-| 06 | Aula 03 | meu-projeto-nextjs | [🔗 Repositório](https://github.com/Arthur-2612/meu-projeto-nextjs) | [🌐 Ver online](https://meu-projeto-nextjs-hujmth3h6-arthur-033b.vercel.app) | Next.js |
-| 07 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/Arthur-2612/Projetos_API.git) | Esse repositório contém diversos projetos | React / Node.js (Express) |
-| 08 | Aula 04 | front_express | [🔗 Repositório](https://github.com/Arthur-2612/front_express.git) | [🌐 Ver online](https://front-express-2jyu.vercel.app/) | Express / Node.js |
+| 01 | Aula 01 | vannila.js | [🔗 Repositório](https://github.com/matheusboffz/senai_projeto_vanilla.git) | [🌐 Ver online](https://senai-projeto-vanilla.vercel.app/) | CSS / JavaScript |
+| 02 | Aula 02 | projeto-react | [🔗 Repositório](https://github.com/matheusboffz/primeiro-projeto-react.git) | [🌐 Ver online](https://primeiro-projeto-react-qj4z.vercel.app/) | React |
+| 03 | Aula 03 | vue-project | [🔗 Repositório](https://github.com/matheusboffz/meu-projeto-vue.git) | [🌐 Ver online](https://meu-projeto-vue-flame.vercel.app/) | Vue |
+| 04 | Aula 03 | meu-app-angular | [🔗 Repositório](https://github.com/matheusboffz/meu-app-angular.git) | [🌐 Ver online](https://meu-app-angular-2p28-9isxx1fvd-matheus-boff.vercel.app/) | Angular |
+| 05 | Aula 03 | meu-projeto-nextjs | [🔗 Repositório](https://github.com/matheusboffz/projeto-nextjs.git) | [🌐 Ver online](https://projeto-nextjs-seven.vercel.app/) | Next.js |
+| 06 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/matheusboffz/resumo-10projetos.git) | Esse repositório contém os 10 projetos solicitados | React / Node.js (Express) |
+| 07 | Aula 04 | front_express | [🔗 Repositório](https://github.com/matheusboffz/front-data-hora.git) | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
 
 ## 🛠️ Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
