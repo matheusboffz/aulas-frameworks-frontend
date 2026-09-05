@@ -1,32 +1,24 @@
-# 📚 Frontend Notes
-> Repositório dedicado aos meus estudos de **Front-end**, reunindo resumos das aulas, anotações e materiais de apoio da disciplina de **Frameworks Front-end**.
+## ✨ Anotações de Front-end
 
-## 🎯 Objetivo
-Organizar o conteúdo estudado, facilitar revisões e documentar minha evolução no desenvolvimento Front-end ao longo da disciplina.
+Espaço reservado aos meus estudos de Front-end, onde reúno sínteses das aulas, apontamentos pessoais e materiais de apoio da disciplina de Frameworks Front-end.
 
-## 📂 Estrutura
-```text
-frontend-notes/
-├── README.md
-├── Aula 01/
-│   └── resumo.md
-├── Aula 02/
-│   └── resumo.md
-├── Aula 03/
-│   └── resumo.md
-└── ...
-```
-Cada pasta representa uma aula e contém um resumo em **Markdown (.md)** com os principais conceitos abordados.
+## 🧭 Propósito
 
-## 📖 Conteúdo
-- 📚 Resumos das aulas
-- 📝 Anotações e conceitos importantes
-- 💻 Exemplos de código
-- 🚀 Boas práticas de desenvolvimento
-- 🔗 Materiais e referências complementares
+Manter o conteúdo estudado organizado, tornar as revisões mais simples e registrar meu progresso no aprendizado de Front-end ao longo do curso.
 
-## 🚀 Projetos da Disciplina
-Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
+## 🗂️ Organização
+
+frontend-notes/ ├── README.md ├── Aula 01/ │ └── resumo.md ├── Aula 02/ │ └── resumo.md ├── Aula 03/ │ └── resumo.md └── ...
+
+Cada pasta corresponde a uma aula e traz um resumo em Markdown (.md) com os conceitos centrais tratados.
+
+## 🗒️ O que você encontra aqui
+
+📘 Sínteses de cada aula ✍️ Apontamentos e conceitos-chave ✅ Boas práticas de desenvolvimento 🌐 Links e materiais complementares
+
+## 🛠️ Projetos da Disciplina
+
+Repositórios dos projetos práticos construídos ao longo da matéria.
 
 | # | Aula | Projeto | Repositório | Deploy | Tecnologia |
 |---|------|---------|--------------|--------|------------|
@@ -38,7 +30,7 @@ Repositórios dos projetos práticos desenvolvidos ao longo da matéria.
 | 06 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/matheusboffz/resumo-10projetos.git) | Esse repositório contém os 10 projetos solicitados | React / Node.js (Express) |
 | 07 | Aula 04 | front_express | [🔗 Repositório](https://github.com/matheusboffz/front-data-hora.git) | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
 
-## 🛠️ Tecnologias
+## ⚙️ Ferramentas e Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
 - HTML
 - CSS
@@ -51,8 +43,9 @@ As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
 - Git & GitHub
 - Vercel
 
-## 🎓 Disciplina
+## 🏫 Disciplina
 **Frameworks Front-end**
 
-## 📌 Objetivo Final
-Construir uma base sólida de conhecimento em Front-end, criando um repositório organizado que sirva como material de consulta para estudos, projetos e futuras oportunidades profissionais.
+## 🏁 Meta Final
+
+Formar uma base consistente de conhecimento em Front-end, mantendo um repositório bem organizado que funcione como referência para estudos, projetos e futuras oportunidades na área.
