@@ -29,6 +29,7 @@ Repositórios dos projetos práticos construídos ao longo da matéria.
 | 05 | Aula 03 | meu-projeto-nextjs | [🔗 Repositório](https://github.com/matheusboffz/projeto-nextjs.git) | [🌐 Ver online](https://projeto-nextjs-seven.vercel.app/) | Next.js |
 | 06 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/matheusboffz/resumo-10projetos.git) | Esse repositório contém os 10 projetos solicitados | React / Node.js (Express) |
 | 07 | Aula 04 | front_express | [🔗 Repositório](https://github.com/matheusboffz/front-data-hora.git) | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
+| 08 | Aula 04 | documentação data e hora |[atividade-02-documentacao.pdf](https://github.com/user-attachments/files/31932071/atividade-02-documentacao.pdf) | Express / Node.js |
 
 ## ⚙️ Ferramentas e Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
