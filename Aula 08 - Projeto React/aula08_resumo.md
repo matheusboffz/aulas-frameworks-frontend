@@ -505,3 +505,120 @@ function App() {
 | **Strings** | Textos informados entre aspas |
 | **Números** | Valores numéricos passados entre chaves `{}` |
 | **Booleanos** | Valores `true` ou `false` |
+| **Arrays e Objetos** | Estruturas de dados enviadas ao componente |
+| **Funções** | Referências a funções (ex: callbacks de eventos) |
+| **Elementos React** | Conteúdo que pode ser renderizado pelo componente |
+
+---
+
+## 9. Virtual DOM & Reconciliação
+
+### 🌐 O que é o DOM?
+
+O **DOM (Document Object Model)** é a representação estruturada do documento HTML disponibilizada pelo navegador. Permite que o JavaScript consulte e modifique elementos da página (textos, atributos, estilos). Em interfaces complexas, gerenciar manualmente todas as alterações pode tornar o código difícil de manter.
+
+```javascript
+document.querySelector("h1").textContent = "Olá!";
+```
+
+### ⚡ O que é o Virtual DOM?
+
+O **Virtual DOM** é um termo utilizado para descrever uma **representação da interface em memória**. O React utiliza descrições de elementos para determinar como a interface deve se apresentar. O desenvolvedor **descreve o resultado esperado** em vez de indicar manualmente cada alteração visual — e o React coordena o processo de atualização.
+
+> O Virtual DOM (usado no React) é uma cópia mais rápida do DOM real. Quando algo muda, o React primeiro atualiza essa cópia, compara com o DOM real e só aplica as diferenças, tornando tudo mais rápido e eficiente.
+
+### ⚖️ DOM vs. Virtual DOM
+
+| DOM | Virtual DOM |
+|---|---|
+| Representa a estrutura do documento no navegador. | É um modelo conceitual para compreender as descrições da interface usadas pelo React. |
+| Pode ser consultado e modificado por JavaScript. | É utilizado pelo React para coordenar a atualização da interface. |
+| Reflete a estrutura do documento renderizado. | Ajuda a representar como a interface deve se apresentar. |
+
+### 🔄 Como funciona a atualização da interface?
+
+```text
+Mudança → Renderização → Reconciliação → Atualização
+```
+
+1. **Mudança:** ocorre uma interação ou atualização de dados.
+2. **Renderização:** o React executa novamente os componentes relevantes para calcular a nova descrição da interface.
+3. **Reconciliação:** o React compara a nova descrição com a anterior.
+4. **Atualização:** as alterações necessárias são aplicadas ao DOM do navegador.
+
+> **Exemplo — Contador:** Um contador começa exibindo o valor zero. Ao clicar em "Incrementar", o estado passa a representar o valor um. A interface é descrita com base no valor atual do estado. O React coordena a atualização necessária — **não é necessário localizar manualmente o elemento e substituir seu texto no DOM.**
+
+### 🔍 Reconciliação e Identidade dos Elementos
+
+- **Reconciliação** é o processo pelo qual o React determina as mudanças necessárias entre descrições sucessivas da interface.
+- O React considera a **estrutura dos elementos** e sua **identidade**.
+- Nem toda nova renderização exige alterações no DOM.
+- O objetivo é coordenar a atualização da interface de acordo com as mudanças identificadas.
+- Em listas, as propriedades `key` ajudam a identificar cada item.
+- **Chaves estáveis** facilitam a associação entre itens quando a lista é alterada.
+
+---
+
+## 10. Listas e Keys
+
+### 📋 Por que renderizar listas no React?
+
+Aplicações frequentemente exibem listas de alunos, produtos, tarefas e conceitos — dados normalmente armazenados em arrays. O React permite transformar coleções de dados em elementos de interface usando o método `map()`.
+
+> **Conceito-chave:** `map()` transforma cada item de um array em um elemento da interface.
+
+```jsx
+const nomes = ["Joao", "Maria", "Ana"];
+const itens = nomes.map((nome) => (
+  <li>{nome}</li>
+));
+```
+
+```javascript
+// map() percorre os elementos de um array
+// Uma função é executada para cada item
+// O resultado é um novo array com os valores retornados
+```
+
+### 🔑 O que é `key`?
+
+- `key` é uma **propriedade especial** utilizada pelo React para identificar elementos entre irmãos em uma lista.
+- Ajuda o React a reconhecer quais itens foram **mantidos, adicionados, removidos ou reordenados**.
+- **Deve ser informada** ao renderizar listas de elementos.
+- Normalmente, utiliza-se um **identificador** associado a cada item dos dados.
+
+```jsx
+const alunos = [
+  { id: 101, nome: "Ana" },
+  { id: 102, nome: "Bruno" },
+  { id: 103, nome: "Caio" }
+];
+
+{alunos.map((aluno) => (
+  <li key={aluno.id}>{aluno.nome}</li>
+))}
+```
+
+### 🔍 Listas, Filtros e Atualização de Dados
+
+- Listas podem ser combinadas com `filter()` e `map()`.
+- `filter()` seleciona os itens que atendem a uma condição.
+- `map()` transforma os itens selecionados em elementos JSX.
+- As chaves devem continuar associadas aos mesmos itens após a filtragem.
+- Quando uma lista está em estado, prefira **produzir novos arrays** em vez de modificar diretamente o array existente.
+
+```jsx
+const conceitos = ["JSX", "Props", "State", "Hooks"];
+
+function ConceitosBasicos() {
+  const basicos = conceitos.filter(
+    (item) => item !== "Hooks"
+  );
+  return (
+    <ul>
+      {basicos.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+}
