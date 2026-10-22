@@ -55,6 +55,7 @@ Repositórios dos projetos práticos construídos ao longo da matéria.
 | 11 | Aula 06 | Sem projeto | - | - | - |
 | 12 | Aula 07 | Projeto-CSS | - | - | HTML / CSS |
 | 13 | Aula 07 | Projeto---Tailwind | - | - | HTML / Tailwind CSS |
+| 14 | Aula 08 | Projeto React | - | - | React |
 
 ## ⚙️ Ferramentas e Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
