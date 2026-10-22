@@ -8,7 +8,25 @@ Manter o conteúdo estudado organizado, tornar as revisões mais simples e regis
 
 ## 🗂️ Organização
 
-frontend-notes/ ├── README.md ├── Aula 01/ │ └── resumo.md ├── Aula 02/ │ └── resumo.md ├── Aula 03/ │ └── resumo.md └── ...
+```text
+frontend-notes/
+├── README.md
+├── Aula 01 - Apresentação da Disciplina/
+│   └── resumo.md
+├── Aula 02 - Configuração do Ambiente de Desenvolvimento/
+│   └── resumo.md
+├── Aula 03 - Frameworks/
+│   └── resumo.md
+├── Aula 04 - Consumindo APIs no Front-end/
+│   └── resumo.md
+├── Aula 05 - Criando APIs para o Front-end/
+│   └── resumo.md
+├── Aula 06 - Projetos Front-End/
+│   └── aula06_resumo.md
+├── Aula 07 - Frameworks - CSS/
+│   └── aula07_resumo.md
+└── ...
+```
 
 Cada pasta corresponde a uma aula e traz um resumo em Markdown (.md) com os conceitos centrais tratados.
 
@@ -32,11 +50,15 @@ Repositórios dos projetos práticos construídos ao longo da matéria.
 | 08 | Aula 04 | documentação data e hora |[atividade-02-documentacao.pdf](https://github.com/user-attachments/files/31932071/atividade-02-documentacao.pdf) | Render / Vercel | PDF |
 | 09 | Aula 05 | front-notas | [🔗 Repositório]() | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
 | 10 | Aula 05 | back-notas | [🔗 Repositório]() | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
+| 11 | Aula 06 | Sem projeto | - | - | - |
+| 12 | Aula 07 | Projeto-CSS | - | - | HTML / CSS |
+| 13 | Aula 07 | Projeto---Tailwind | - | - | HTML / Tailwind CSS |
 
 ## ⚙️ Ferramentas e Tecnologias
 As tecnologias serão adicionadas conforme forem estudadas durante o semestre.
 - HTML
 - CSS
+- Tailwind CSS
 - JavaScript
 - React
 - Vue.js
