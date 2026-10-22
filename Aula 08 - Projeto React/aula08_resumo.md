@@ -245,3 +245,263 @@ console.log("Aprovados:", aprovados);
 Objetos são estruturas para armazenar informações relacionadas em propriedades e comportamentos em métodos.
 
 - **Propriedades →** armazenam dados do objeto.
+- **Acesso →** permite consultar ou alterar suas propriedades.
+- **Métodos →** funções associadas ao objeto.
+- **`this` →** referencia o próprio objeto dentro de seus métodos.
+
+```javascript
+console.log("=== 07 — Objetos ===");
+const aluno = {
+    nome: "Carlos",
+    idade: 20,
+    curso: "ADS",
+    apresentar() {
+        console.log(`Meu nome é ${this.nome} e curso ${this.curso}.`);
+    }
+};
+console.log(aluno.nome);
+console.log(aluno.curso);
+aluno.apresentar();
+```
+
+---
+
+## 5. DOM (Document Object Model)
+
+O **DOM** é uma representação em árvore da estrutura de uma página web, permitindo que o JavaScript altere seu conteúdo, estilos e estrutura.
+
+### 🔍 Selecionando Elementos do DOM
+
+| Método | Descrição |
+|---|---|
+| `getElementById()` | Seleciona um elemento pelo `id` |
+| `querySelector()` | Seleciona o **primeiro** elemento que corresponde a um seletor CSS |
+| `querySelectorAll()` | Seleciona **todos** os elementos que correspondem ao seletor CSS |
+
+### ✏️ Alterando o DOM com JavaScript
+
+| Propriedade / Método | Descrição |
+|---|---|
+| `textContent` | Altera o texto de um elemento |
+| `value` | Altera o valor de campos de formulário |
+| `classList` | Adiciona, remove ou alterna classes CSS |
+| `createElement()` | Cria novos elementos HTML |
+| `appendChild()` | Adiciona elementos ao documento |
+
+```javascript
+// Seleciona o botão pelo ID
+const botao = document.querySelector("#botao");
+// Seleciona o elemento que exibirá a mensagem
+const texto = document.querySelector("#mensagem");
+// Adiciona um evento de clique ao botão
+botao.addEventListener("click", () => {
+    // Altera o texto do elemento
+    texto.textContent = "Olá! O conteúdo foi alterado.";
+});
+```
+
+> **Atividade de Revisão:** [wayground.com](https://wayground.com/) | **Material:** [github.com/deivisontakatu/aula-javascript](https://github.com/deivisontakatu/aula-javascript)
+
+---
+
+## 6. JSX — JavaScript XML
+
+### 📖 O que é JSX?
+
+**JSX** é uma extensão de sintaxe para JavaScript que permite escrever estruturas semelhantes a HTML dentro do JavaScript. É utilizado para descrever interfaces de componentes React, combinando a estrutura da interface com a lógica que produz seu conteúdo.
+
+```jsx
+const titulo = <h1>Olá, React!</h1>;
+```
+
+**Principal vantagem:** simplificar a leitura e a manutenção das interfaces.
+
+### 🔗 Expressões JavaScript no JSX
+
+É possível utilizar as chaves `{ }` para inserir expressões JavaScript no JSX:
+
+```jsx
+const nome = "João";
+const saudacao = <h1>Olá, {nome}!</h1>;
+
+const a = 10;
+const b = 5;
+const resultado = <p>Soma: {a + b}</p>;
+```
+
+### ⚠️ Diferenças entre JSX e HTML
+
+| Característica | HTML | JSX |
+|---|---|---|
+| Atributo de classe | `class` | `className` |
+| Atributo de rótulo | `for` | `htmlFor` |
+| Elementos sem conteúdo | `<img>` | `<img />` (deve ser fechado) |
+| Raiz de componente | Múltiplos elementos | Um elemento raiz ou `Fragment` |
+| Expressões JavaScript | Não suportado diretamente | Entre chaves `{}` |
+
+```jsx
+function LinkDocumentacao() {
+  return (
+    <a href="https://react.dev" className="link">
+      Documentação do React
+    </a>
+  );
+}
+```
+
+### ✅ Resumo do JSX
+
+- Facilita a descrição das interfaces React.
+- Permite inserir expressões JavaScript entre chaves `{}`.
+- Possui convenções diferentes do HTML.
+- Organiza interfaces em componentes reutilizáveis.
+- **É transformado em JavaScript antes da execução** (transpilado pelo Babel/Vite/etc.).
+
+---
+
+## 7. Componentes React
+
+### 🧱 O que é um Componente?
+
+**Componentes** são unidades independentes e reutilizáveis da interface. Em React, são normalmente **funções JavaScript** que retornam elementos React, geralmente descritos com JSX, permitindo dividir uma aplicação em partes menores e organizadas.
+
+```jsx
+function Cabecalho() {
+  return (
+    <header>
+      <h1>React Lab</h1>
+    </header>
+  );
+}
+```
+
+> Na prática: uma loja virtual pode ter componentes como `Cabecalho`, `Busca`, `Produto` e `Rodape`.
+
+### 📐 Por que dividir uma interface?
+
+- Uma página pode ter várias partes: menu, busca, cartões, rodapé.
+- Colocar tudo em um único componente dificulta a leitura.
+- Dividir em partes menores facilita a organização do código.
+- **Cada parte pode ser reutilizada em outras páginas.**
+
+### 🛠️ Como utilizar componentes no JSX?
+
+1. **Crie uma função** com nome iniciado em **letra maiúscula**.
+2. **Use `return`** para definir o que será exibido.
+3. **Utilize `<NomeDoComponente />`** para exibir o componente.
+4. **Combine componentes** para montar uma página completa.
+
+```jsx
+function Cabecalho() {
+  return <h1>Catálogo React</h1>;
+}
+function App() {
+  return (
+    <main>
+      <Cabecalho />
+      <p>Explore os principais conceitos.</p>
+    </main>
+  );
+}
+```
+
+### 🌳 Árvore de Componentes
+
+Uma aplicação pode ser representada como uma árvore hierárquica, onde o componente principal contém componentes filhos, que por sua vez podem conter outros componentes:
+
+```
+App
+├── Cabecalho
+├── BarraDePesquisa
+├── ListaDeConceitos
+│   ├── CardConceito
+│   └── CardConceito
+└── Rodape
+```
+
+### ♻️ Componentes e Reutilização
+
+- Um componente pode ser reutilizado em diferentes partes da aplicação.
+- A reutilização evita repetir estruturas semelhantes.
+- Componentes ajudam a manter a consistência visual.
+- Os dados específicos de cada utilização podem ser recebidos por meio de **props**.
+
+---
+
+## 8. Props (Propriedades)
+
+### 📬 O que são Props?
+
+**Props** é a abreviação de *properties* (propriedades). São dados recebidos por um componente React que permitem:
+- Enviar informações de um **componente pai** para um **filho**.
+- **Reutilizar componentes** com conteúdos diferentes.
+
+```jsx
+function CardConceito({ titulo, descricao }) {
+  return (
+    <article>
+      <h2>{titulo}</h2>
+      <p>{descricao}</p>
+    </article>
+  );
+}
+```
+
+> **Conceito-chave:** a estrutura do componente permanece igual, enquanto os dados exibidos podem mudar.
+
+### 💡 Por que utilizar Props?
+
+- Permitem **personalizar componentes reutilizáveis**.
+- Evitam duplicar estruturas de interface.
+- Facilitam a passagem de informações entre componentes.
+- Tornam explícitos os dados utilizados por cada componente.
+
+```jsx
+<CardConceito
+  titulo="JSX"
+  descricao="Sintaxe para descrever interfaces."
+/>
+<CardConceito
+  titulo="Props"
+  descricao="Entradas recebidas por componentes."
+/>
+```
+
+```jsx
+function Saudacao({ nome }) {
+  return <h1>Olá, {nome}!</h1>;
+}
+// Utilização
+<Saudacao nome="Joao" />
+<Saudacao nome="Maria" />
+// Resultado: cada utilização apresenta uma mensagem diferente com o mesmo componente.
+```
+
+### 🔄 Fluxo de Dados entre Componentes
+
+- Os dados fluem do **componente pai** para o **filho** (unidirecional).
+- O componente pai organiza e fornece as informações.
+- O componente filho recebe as props e apresenta os dados.
+- Esse fluxo explícito facilita compreender de onde vêm as informações.
+
+```jsx
+function Card({ titulo }) {
+  return <h2>{titulo}</h2>;
+}
+function App() {
+  return (
+    <main>
+      <Card titulo="Componentes" />
+      <Card titulo="Props" />
+    </main>
+  );
+}
+```
+
+### 📊 Tipos de Valores em Props
+
+| Tipo | Descrição |
+|---|---|
+| **Strings** | Textos informados entre aspas |
+| **Números** | Valores numéricos passados entre chaves `{}` |
+| **Booleanos** | Valores `true` ou `false` |
