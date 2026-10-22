@@ -622,3 +622,82 @@ function ConceitosBasicos() {
     </ul>
   );
 }
+```
+
+---
+
+## 11. Renderização Condicional
+
+### ❓ O que é Renderização Condicional?
+
+Permite **mostrar, ocultar ou alterar** partes da interface conforme uma condição. Utiliza expressões e operadores JavaScript dentro do JSX para adaptar a interface aos dados e ao estado da aplicação.
+
+> **Exemplo:** uma tela pode apresentar mensagens diferentes para usuários autenticados e não autenticados.
+
+### 🔀 Utilizando `if` e `return`
+
+A instrução `if` é indicada quando as partes da interface são substancialmente diferentes. O `return` pode encerrar a execução do componente antecipadamente, mantendo o código organizado.
+
+```jsx
+function MensagemAcesso({ autenticado }) {
+  if (autenticado) {
+    return <p>Bem-vindo de volta!</p>;
+  }
+  return <p>Entre para continuar.</p>;
+}
+```
+
+> **Quando utilizar?** Quando cada condição exige uma resposta ou interface diferente.
+
+### 📊 Renderização Condicional com Dados e Estado
+
+- As condições podem depender de props, estado ou dados recebidos pela aplicação.
+- Listas podem apresentar resultados ou uma mensagem quando estiverem vazias.
+- Interfaces também podem representar **estados de carregamento e erro**.
+- A condição deve refletir o estado real dos dados.
+
+```jsx
+function ListaResultados({ resultados }) {
+  if (resultados.length === 0) {
+    return <p>Nenhum resultado encontrado.</p>;
+  }
+  return (
+    <ul>
+      {resultados.map((resultado) => (
+        <li key={resultado.id}>
+          {resultado.nome}
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### ⚡ Operador Ternário — Alternando Mensagens
+
+O **operador ternário** pode apresentar diferentes mensagens conforme o estado:
+
+```text
+condicao ? valorSeVerdadeiro : valorSeFalso
+```
+
+- É útil para alternar entre carregamento e resultado.
+- A condição deve indicar claramente qual estado está ativo.
+- Em aplicações maiores, carregamento, erro e sucesso podem precisar de tratamentos distintos.
+
+```jsx
+function ResultadoBusca({ carregando }) {
+  return (
+    <div>
+      {carregando
+        ? <p>Buscando...</p>
+        : <p>Busca finalizada.</p>}
+    </div>
+  );
+}
+```
+
+> **Aplicações:** catálogos, resultados de busca, listas de produtos e painéis administrativos.
+
+---
+
