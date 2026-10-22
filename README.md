@@ -25,6 +25,8 @@ frontend-notes/
 │   └── aula06_resumo.md
 ├── Aula 07 - Frameworks - CSS/
 │   └── aula07_resumo.md
+├── Aula 08 - Projeto React/
+│   └── aula08_resumo.md
 └── ...
 ```
 
