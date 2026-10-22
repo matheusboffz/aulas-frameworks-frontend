@@ -701,3 +701,71 @@ function ResultadoBusca({ carregando }) {
 
 ---
 
+## 12. Atividade Prática
+
+### 🎯 Requisitos da Atividade
+
+Desenvolver uma **aplicação React** que utilize **todos os conceitos estudados nesta aula**:
+
+- ✅ **JSX** — sintaxe e expressões JavaScript
+- ✅ **Componentes** — criação, composição e reutilização
+- ✅ **Props** — passagem de dados entre componentes
+- ✅ **Virtual DOM** — renderização e reconciliação
+- ✅ **Listas e Keys** — renderização de coleções de dados
+- ✅ **Renderização Condicional** — controle de exibição da interface
+
+### 📦 Entregáveis
+
+- Criar um **repositório público no GitHub**.
+- Incluir um **README** contendo:
+  - Descrição da aplicação.
+  - Funcionalidades implementadas.
+  - Conceitos do React utilizados.
+
+### 🔗 Links Complementares
+
+| Recurso | Link |
+|---|---|
+| Conceitos React (aula) | [github.com/deivisontakatu/aula-react](https://github.com/deivisontakatu/aula-react) |
+| Exemplo Completo | [github.com/deivisontakatu/projeto-react](https://github.com/deivisontakatu/projeto-react) |
+| Aplicação Online | [projeto-react-five-swart.vercel.app](https://projeto-react-five-swart.vercel.app/) |
+
+---
+
+## 13. Resumo da Aula
+
+```text
+Revisão JS (Variáveis, Funções, Arrays, Objetos, DOM)
+       ↓
+JSX (Sintaxe, Expressões, Diferenças do HTML)
+       ↓
+Componentes (Criação, Composição, Árvore, Reutilização)
+       ↓
+Props (Passagem de Dados Pai → Filho, Tipos de Valores)
+       ↓
+Virtual DOM & Reconciliação (Renderização Eficiente)
+       ↓
+Listas e Keys (map(), filter(), key única)
+       ↓
+Renderização Condicional (if/return, Ternário, Estados)
+       ↓
+Atividade: Aplicação React integrada no GitHub
+```
+
+Nesta aula exploramos os fundamentos essenciais do **React**, partindo de uma revisão sólida de **JavaScript** (variáveis, operadores, condicionais, repetições, funções, arrays, objetos e manipulação do DOM). Em seguida, aprofundamos os conceitos centrais do React: **JSX** como extensão de sintaxe para descrever interfaces, **Componentes** como unidades independentes e reutilizáveis, **Props** para o fluxo de dados unidirecional entre componentes, **Virtual DOM** e o processo de **Reconciliação** para atualizações eficientes, **Listas e Keys** para renderização de coleções e **Renderização Condicional** para controlar dinamicamente a exibição de partes da interface.
+
+---
+
+## 14. Referências
+
+1. SOUZA, Natan. **Bootstrap 4: conheça a biblioteca front-end mais utilizada no mundo.** São Paulo: Casa do Código, 2018. E-book. Disponível em: https://plataforma.bvirtual.com.br.
+2. MACHADO, Kheronn Khennedy. **Angular 11 e Firebase: construindo uma aplicação integrada com a plataforma do Google.** São Paulo: Casa do Código, 2021. E-book. Disponível em: https://plataforma.bvirtual.com.br. Acesso em: 13 maio 2025.
+3. EIS, Diego. **Guia Front-end: o caminho das pedras para ser um dev front-end.** São Paulo: Casa do Código, 2015. E-book. Disponível em: https://plataforma.bvirtual.com.br.
+4. GONÇALVES, Edson. **Desenvolvendo aplicações Web com JSP, Servlets, JavaServer Faces, Hibernate, EJB 3 Persistence e Ajax.** Rio de Janeiro: Ciência Moderna, c2007.
+5. HARTCOPP, Patrícia Ferreira. **Métrica Web.** São Paulo: Contentus, 2020. E-book (94 p.). Disponível em: https://plataforma.bvirtual.com.br/Acervo/Publicacao/185191. Acesso em: 30 abr. 2024.
+6. NIEDERAUER, Juliano. **Desenvolvendo Websites com PHP: aprenda a criar Websites dinâmicos e interativos com PHP e banco de dados.** 3. ed. São Paulo: Novatec, 2017.
+7. PREECE, J.; ROGERS, Y.; SHARP, H. **Design de Interação: além da interação Homem-Computador.** 3. ed. Porto Alegre: Bookman, 2013.
+8. SOUSA, Roque Fernando Marcos. **Canvas HTML 5: composição gráfica e interatividade na Web.** Rio de Janeiro: Brasport, 2014. E-book (194 p.). Disponível em: https://plataforma.bvirtual.com.br/Acervo/Publicacao/160686. Acesso em: 22 jun. 2024.
+
+---
+**Material de Apoio:** Disciplina de Frameworks Front-end — Prof. Me. Deivison S. Takatu (SENAI).
