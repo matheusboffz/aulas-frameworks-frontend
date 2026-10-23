@@ -50,8 +50,8 @@ Repositórios dos projetos práticos construídos ao longo da matéria.
 | 06 | Aula 04 | Projetos_API | [🔗 Repositório](https://github.com/matheusboffz/resumo-10projetos.git) | Esse repositório contém os 10 projetos solicitados | React / Node.js (Express) |
 | 07 | Aula 04 | front_express | [🔗 Repositório](https://github.com/matheusboffz/front-data-hora.git) | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
 | 08 | Aula 04 | documentação data e hora |[atividade-02-documentacao.pdf](https://github.com/user-attachments/files/31932071/atividade-02-documentacao.pdf) | Render / Vercel | PDF |
-| 09 | Aula 05 | front-notas | [🔗 Repositório]() | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
-| 10 | Aula 05 | back-notas | [🔗 Repositório]() | [🌐 Ver online](https://front-data-hora-xbj4.vercel.app/) | Express / Node.js |
+| 09 | Aula 05 | front-notas | [🔗 Repositório](https://github.com/matheusboffz/front-notas.git) | [🌐 Ver online](https://front-notas-phi.vercel.app/) | Express / Node.js |
+| 10 | Aula 05 | back-notas | [🔗 Repositório](https://github.com/matheusboffz/back-notas.git) | [🌐 Ver online](https://back-notas-g9p7.onrender.com) | Express / Node.js |
 | 11 | Aula 06 | Sem projeto | - | - | - |
 | 12 | Aula 07 | Projeto-CSS | - | - | HTML / CSS |
 | 13 | Aula 07 | Projeto---Tailwind | - | - | HTML / Tailwind CSS |
