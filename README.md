@@ -53,8 +53,8 @@ Repositórios dos projetos práticos construídos ao longo da matéria.
 | 09 | Aula 05 | front-notas | [🔗 Repositório](https://github.com/matheusboffz/front-notas.git) | [🌐 Ver online](https://front-notas-phi.vercel.app/) | Express / Node.js |
 | 10 | Aula 05 | back-notas | [🔗 Repositório](https://github.com/matheusboffz/back-notas.git) | [🌐 Ver online](https://back-notas-g9p7.onrender.com) | Express / Node.js |
 | 11 | Aula 06 | Sem projeto | - | - | - |
-| 12 | Aula 07 | Projeto-CSS | - | - | HTML / CSS |
-| 13 | Aula 07 | Projeto---Tailwind | - | - | HTML / Tailwind CSS |
+| 12 | Aula 07 | Projeto-CSS | [🔗 Repositório](https://github.com/matheusboffz/projeto-css.git) | [🌐 Ver online](https://projeto-css-dun.vercel.app) | HTML / CSS |
+| 13 | Aula 07 | Projeto---Tailwind  |  [🔗 Repositório](https://github.com/matheusboffz/projeto-tailwind.git) |  [🌐 Ver online](https://projeto-tailwind-drab.vercel.app/)  | HTML / Tailwind CSS |
 | 14 | Aula 08 | Projeto React | - | - | React |
 
 ## ⚙️ Ferramentas e Tecnologias
